@@ -1,0 +1,190 @@
+:root {
+  --font-primary: "Poppins", Arial, sans-serif;
+  --font-secondary: "Rubik", Arial, sans-serif;
+  --principal-1: #ff4700;
+  --principal-2: #020100;
+  --principal-3: #ffffff;
+  --complementario-1: #9c9c9c;
+  --complementario-2: #ffa37f;
+  --complementario-3: rgb(77, 77, 77);
+}
+
+body {
+  width: 1080px; /* Ancho fijo */
+  height: 1920px;
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  color: var(--principal-3);
+  background-image: url("./img/backgound.svg");
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    margin: 50px;
+    max-width: 500px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.info {
+  grid-column: span 5;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: var(--font-secondary);
+    font-style: italic;
+    font-size: 70px;
+  }
+}
+
+.formate {
+  grid-column: span 7;
+  text-align: center;
+  margin-bottom: 0px;
+
+  .formate-box {
+    grid-column: span 7;
+    background: #ffe3da;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--principal-1);
+    padding-bottom: 1px;
+    margin-right: 20px;
+
+    h2 {
+      font-family: var(--font-secondary);
+      font-style: italic;
+      font-size: 60px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+
+  .qr-box {
+    grid-column: span 6; /* Ocupa 6 columnas en el grid */
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Asegura que texto y QR estén en extremos opuestos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 20px;
+
+    .text-container {
+      flex: 1; /* El texto ocupa todo el espacio disponible */
+      text-align: right; /* Alinea el texto a la izquierda */
+
+      p {
+        font-weight: bold;
+        margin: 0; /* Elimina márgenes por defecto de los párrafos */
+        font-size: 30px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        margin: 0; /* Elimina márgenes por defecto de los párrafos */
+        font-size: 32px;
+        line-height: 2;
+        background-color: var(--principal-3);
+        color: var(--principal-1);
+        padding-right: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 35px;
+        margin-right: -30px;
+      }
+    }
+    .qr {
+      width: 210px; /* Tamaño fijo para el QR */
+      height: auto;
+      margin-left: 20px; /* Espaciado entre texto y QR */
+    }
+  }
+}
+
+.video {
+  grid-column: span 6;
+
+  .video-header {
+    display: flex; /* Activa Flexbox para alinear el título y el ícono */
+    justify-content: space-between; /* Coloca los elementos en extremos opuestos */
+    align-items: center; /* Alinea verticalmente los elementos */
+
+    .title-video {
+      font-family: var(--font-secondary);
+      font-style: italic;
+      font-size: 50px;
+      margin: 0;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .coder-icon {
+      width: 70px;
+      padding-right: 40px;
+    }
+  }
+
+  .video-box {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se coloquen verticalmente */
+    align-items: center;
+    margin-top: 20px; /* Da separación respecto al encabezado */
+  }
+}
+
+.estrellas {
+  grid-column: span 6;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .iframe-container {
+    width: 500px; /* Tamaño visible del iframe */
+    height: 900px; /* Tamaño visible del contenido */
+    overflow: hidden; /* Oculta cualquier contenido extra */
+    position: relative;
+    border-radius: 10px;
+
+    iframe {
+      width: 620px; /* Ajusta al doble del tamaño del contenedor */
+      height: 1100px; /* Ajusta al doble del tamaño del contenedor */
+      transform: scale(0.9); /* Reduce el contenido al 50% */
+      transform-origin: 0 0; /* Comienza el escalado desde la esquina superior izquierda */
+      position: absolute;
+      top: -30px; /* Ajusta para centrar verticalmente */
+      left: -30px; /* Ajusta para centrar horizontalmente */
+      border: none;
+    }
+  }
+}
