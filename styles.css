@@ -9,6 +9,12 @@
   --complementario-3: rgb(77, 77, 77);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-primary);
   margin: 0;
@@ -187,7 +193,7 @@ header {
     iframe {
       width: 620px; /* Ajusta al doble del tamaño del contenedor */
       height: 1100px; /* Ajusta al doble del tamaño del contenedor */
-      transform: scale(0.6); /* Reduce el contenido al 50% */
+      transform: scale(0.3); /* Reduce el contenido al 50% */
       transform-origin: 0 0; /* Comienza el escalado desde la esquina superior izquierda */
       position: absolute;
       top: -30px; /* Ajusta para centrar verticalmente */
