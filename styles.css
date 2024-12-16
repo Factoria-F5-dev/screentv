@@ -40,7 +40,7 @@ header {
 
 .logo {
   margin: 50px;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .container {
@@ -158,7 +158,8 @@ header {
 }
 
 .coder-icon {
-  width: 20px;
+  width: 70px;
+  margin-right: 50px;
 }
 
 .video-box {
@@ -189,7 +190,7 @@ header {
 .iframe-container iframe {
   width: 620px; /* Ajusta al doble del tamaño del contenedor */
   height: 1100px; /* Ajusta al doble del tamaño del contenedor */
-  transform: scale(0.3); /* Reduce el contenido al 50% */
+  transform: scale(0.9); /* Reduce el contenido al 50% */
   transform-origin: 0 0; /* Comienza el escalado desde la esquina superior izquierda */
   position: absolute;
   top: -30px; /* Ajusta para centrar verticalmente */
