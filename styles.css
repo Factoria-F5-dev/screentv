@@ -38,6 +38,7 @@ header {
 }
 
 .container {
+  transform: scale(0.6);
   width: 100%;
   max-width: 1080px;
   height: 1920px;
@@ -155,8 +156,7 @@ header {
     }
 
     .coder-icon {
-      width: 70px;
-      padding-right: 40px;
+      width: 40px;
     }
   }
 
@@ -187,7 +187,7 @@ header {
     iframe {
       width: 620px; /* Ajusta al doble del tamaño del contenedor */
       height: 1100px; /* Ajusta al doble del tamaño del contenedor */
-      transform: scale(0.9); /* Reduce el contenido al 50% */
+      transform: scale(0.6); /* Reduce el contenido al 50% */
       transform-origin: 0 0; /* Comienza el escalado desde la esquina superior izquierda */
       position: absolute;
       top: -30px; /* Ajusta para centrar verticalmente */
