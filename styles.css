@@ -172,6 +172,11 @@ header {
   margin-top: 20px;
 }
 
+.video-box iframe {
+  transform: rotate(90deg); /* Invierte la rotación global */
+  transform-origin: center center;
+}
+
 .estrellas {
   grid-column: span 6;
   border-radius: 10px;
