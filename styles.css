@@ -166,10 +166,19 @@ header {
 }
 
 .video-box {
-  display: flex;
-  flex-direction: column; /* Asegura que los elementos dentro se coloquen verticalmente */
-  align-items: center;
-  margin-top: 20px;
+  width: 400px; /* Ancho del contenedor */
+  height: 700px; /* Alto del contenedor */
+  overflow: hidden; /* Oculta las partes fuera del contenedor */
+  position: relative; /* Posiciona el video dentro del contenedor */
+}
+
+.video-box video {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%) scale(2.7); /* Ajusta zoom (scale) y centra el video */
+  width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones */
 }
 
 .estrellas {
@@ -208,6 +217,7 @@ footer {
   color: var(--principal-3);
   font-size: 20px;
   font-family: var(--font-primary);
+  margin-top: -30px;
 }
 
 footer h1 {
