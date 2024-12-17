@@ -44,7 +44,7 @@ header {
 }
 
 .container {
-  transform: scale(0.6);
+  transform: scale(0.75);
   width: 100%;
   max-width: 1080px;
   height: 1920px;
