@@ -157,6 +157,7 @@ header {
   margin: 0;
   text-align: right;
   padding-right: 30px;
+  margin-top: -50px;
 }
 
 .coder-icon {
@@ -168,7 +169,7 @@ header {
   display: flex;
   flex-direction: column; /* Asegura que los elementos dentro se coloquen verticalmente */
   align-items: center;
-  margin-top: 20px; /* Da separación respecto al encabezado */
+  margin-top: 20px;
 }
 
 .estrellas {
@@ -195,9 +196,9 @@ header {
   transform: scale(0.9); /* Reduce el contenido al 50% */
   transform-origin: 0 0; /* Comienza el escalado desde la esquina superior izquierda */
   position: absolute;
-  top: -30px; /* Ajusta para centrar verticalmente */
   left: -30px; /* Ajusta para centrar horizontalmente */
   border: none;
+  margin-top: 10px;
 }
 
 footer {
