@@ -172,10 +172,10 @@ header {
   margin-top: 20px;
 }
 
-.video-box iframe {
-  transform: rotate(90deg); /* Invierte la rotación global */
+/*.video-box iframe {
+  transform: rotate(90deg); 
   transform-origin: center center;
-}
+}*/
 
 .estrellas {
   grid-column: span 6;
