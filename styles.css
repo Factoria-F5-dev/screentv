@@ -18,8 +18,8 @@
 body {
   font-family: var(--font-primary);
   margin: 0;
-  margin-top: -280px;
-  margin-left: -55px;
+  margin-top: -100px;
+  margin-left: -100px;
   padding: 0;
   color: var(--principal-3);
   background-image: url("./img/background.png");
@@ -31,18 +31,17 @@ body {
 .container {
   transform: scale(0.75);
   width: 100%;
-  max-width: 1080px;
-  height: 1920px;
+  max-width: 1920px;
+  height: 1080px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto auto auto;
   gap: 20px;
   padding: 10px;
   justify-content: center;
   align-items: center;
 }
 
-header {
+/*header {
   grid-column: span 12;
   display: flex;
   justify-content: center;
@@ -52,13 +51,15 @@ header {
 .logo {
   margin: 50px;
   max-width: 700px;
-}
+}*/
 
 .info {
-  grid-column: span 5;
+  grid-column: span 4;
   padding: 20px;
   border-radius: 10px;
   font-size: 30px;
+  width: 500px;
+  height: 900px;
 }
 
 .info h1 {
@@ -69,14 +70,16 @@ header {
   font-size: 70px;
 }
 
+.info h2 {
+  font-size: 35px;
+}
+
 .formate {
-  grid-column: span 7;
   text-align: center;
   margin-bottom: 0px;
 }
 
 .formate-box {
-  grid-column: span 7;
   background: #ffe3da;
   border-radius: 10px;
   text-align: center;
@@ -97,21 +100,21 @@ header {
   font-weight: bold;
   font-size: 30px;
 }
-
+/*
 .qr-box {
-  grid-column: span 6; /* Ocupa 6 columnas en el grid */
-  display: flex; /* Activa Flexbox */
-  justify-content: space-between; /* Asegura que texto y QR estén en extremos opuestos */
-  align-items: center; /* Alinea verticalmente los elementos */
+  grid-column: span 6; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   padding: 20px;
 }
 
 .text-container {
-  flex: 1; /* El texto ocupa todo el espacio disponible */
-  text-align: right; /* Alinea el texto a la izquierda */
+  flex: 1; 
+  text-align: right;
 }
 .text-container h1 {
-  margin: 0; /* Elimina márgenes por defecto de los párrafos */
+  margin: 0; 
   font-size: 32px;
   line-height: 2;
   background-color: var(--principal-3);
@@ -123,20 +126,20 @@ header {
 }
 
 .qr {
-  width: 210px; /* Tamaño fijo para el QR */
+  width: 210px;
   height: auto;
-  margin-left: 20px; /* Espaciado entre texto y QR */
+  margin-left: 20px;
 }
 
 .text-container p {
   font-weight: bold;
-  margin: 0; /* Elimina márgenes por defecto de los párrafos */
+  margin: 0; 
   font-size: 30px;
   line-height: 1.5;
-}
+}*/
 
 .video {
-  grid-column: span 6;
+  grid-column: span 4;
 }
 
 .video-header {
@@ -168,7 +171,7 @@ header {
 }
 
 .estrellas {
-  grid-column: span 6;
+  grid-column: span 4;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -194,18 +197,4 @@ header {
   left: -30px; /* Ajusta para centrar horizontalmente */
   border: none;
   margin-top: 10px;
-}
-
-footer {
-  grid-column: span 12;
-  display: flex;
-  justify-content: space-evenly;
-  color: var(--principal-3);
-  font-size: 20px;
-  font-family: var(--font-primary);
-  margin-top: -20px;
-}
-
-footer h1 {
-  font-size: 45px;
 }
