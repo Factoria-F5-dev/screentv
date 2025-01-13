@@ -74,7 +74,7 @@ body {
   font-size: 28px;
 }
 .info h2 {
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -96,14 +96,14 @@ body {
 .formate-box h2 {
   font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .formate-box li {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 31px;
   margin-bottom: 10px;
 }
 
@@ -181,7 +181,7 @@ body {
 .title-video {
   font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
   text-align: right;
   padding-right: 30px;
@@ -190,7 +190,7 @@ body {
 
 .coder-icon {
   width: 70px;
-  margin-right: 70px;
+  margin-right: 50px;
   margin-top: -80px;
 }
 
